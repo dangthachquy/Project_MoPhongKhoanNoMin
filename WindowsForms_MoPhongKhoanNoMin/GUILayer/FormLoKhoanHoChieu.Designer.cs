@@ -40,7 +40,6 @@
             this.textBox_ChieuSauLK = new System.Windows.Forms.TextBox();
             this.textBox_DuongKinh = new System.Windows.Forms.TextBox();
             this.buttonUpdate = new System.Windows.Forms.Button();
-            this.labelTitle3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -53,9 +52,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.labelValue_MaHoChieu = new System.Windows.Forms.Label();
+            this.label_DonVi1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.elementHost_LoKhoan = new System.Windows.Forms.Integration.ElementHost();
             this.userControl_LoKhoan1 = new WindowsForms_MoPhongKhoanNoMin.CustomControls.UserControl_LoKhoan();
-            this.labelValue_MaHoChieu = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelTitle1
@@ -180,7 +185,7 @@
             this.textBox_ChieuSauLK.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_ChieuSauLK.Location = new System.Drawing.Point(200, 200);
             this.textBox_ChieuSauLK.Name = "textBox_ChieuSauLK";
-            this.textBox_ChieuSauLK.Size = new System.Drawing.Size(100, 22);
+            this.textBox_ChieuSauLK.Size = new System.Drawing.Size(50, 22);
             this.textBox_ChieuSauLK.TabIndex = 92;
             // 
             // textBox_DuongKinh
@@ -188,7 +193,7 @@
             this.textBox_DuongKinh.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_DuongKinh.Location = new System.Drawing.Point(200, 170);
             this.textBox_DuongKinh.Name = "textBox_DuongKinh";
-            this.textBox_DuongKinh.Size = new System.Drawing.Size(100, 22);
+            this.textBox_DuongKinh.Size = new System.Drawing.Size(50, 22);
             this.textBox_DuongKinh.TabIndex = 91;
             // 
             // buttonUpdate
@@ -198,26 +203,13 @@
             this.buttonUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUpdate.ForeColor = System.Drawing.Color.White;
-            this.buttonUpdate.Location = new System.Drawing.Point(672, 366);
+            this.buttonUpdate.Location = new System.Drawing.Point(360, 366);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(100, 33);
             this.buttonUpdate.TabIndex = 96;
             this.buttonUpdate.Text = "CẬP NHẬT";
             this.buttonUpdate.UseVisualStyleBackColor = false;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
-            // 
-            // labelTitle3
-            // 
-            this.labelTitle3.BackColor = System.Drawing.Color.Transparent;
-            this.labelTitle3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelTitle3.Location = new System.Drawing.Point(622, 20);
-            this.labelTitle3.Name = "labelTitle3";
-            this.labelTitle3.Padding = new System.Windows.Forms.Padding(3);
-            this.labelTitle3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelTitle3.Size = new System.Drawing.Size(150, 27);
-            this.labelTitle3.TabIndex = 97;
-            this.labelTitle3.Text = "tên bản vẽ";
             // 
             // textBox1
             // 
@@ -310,7 +302,7 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(260, 268);
+            this.label1.Location = new System.Drawing.Point(100, 268);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 5);
             this.label1.TabIndex = 108;
@@ -318,7 +310,7 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(260, 298);
+            this.label2.Location = new System.Drawing.Point(100, 298);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(30, 5);
             this.label2.TabIndex = 109;
@@ -326,7 +318,7 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(260, 328);
+            this.label3.Location = new System.Drawing.Point(100, 328);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 5);
             this.label3.TabIndex = 110;
@@ -334,20 +326,10 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(260, 358);
+            this.label4.Location = new System.Drawing.Point(100, 358);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(30, 5);
             this.label4.TabIndex = 111;
-            // 
-            // elementHost_LoKhoan
-            // 
-            this.elementHost_LoKhoan.BackColorTransparent = true;
-            this.elementHost_LoKhoan.Location = new System.Drawing.Point(350, 50);
-            this.elementHost_LoKhoan.Name = "elementHost_LoKhoan";
-            this.elementHost_LoKhoan.Size = new System.Drawing.Size(120, 320);
-            this.elementHost_LoKhoan.TabIndex = 99;
-            this.elementHost_LoKhoan.Text = "elementHost1";
-            this.elementHost_LoKhoan.Child = this.userControl_LoKhoan1;
             // 
             // labelValue_MaHoChieu
             // 
@@ -361,13 +343,101 @@
             this.labelValue_MaHoChieu.TabIndex = 112;
             this.labelValue_MaHoChieu.Text = "value";
             // 
+            // label_DonVi1
+            // 
+            this.label_DonVi1.BackColor = System.Drawing.Color.Transparent;
+            this.label_DonVi1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_DonVi1.ForeColor = System.Drawing.Color.Black;
+            this.label_DonVi1.Location = new System.Drawing.Point(250, 170);
+            this.label_DonVi1.Name = "label_DonVi1";
+            this.label_DonVi1.Padding = new System.Windows.Forms.Padding(3);
+            this.label_DonVi1.Size = new System.Drawing.Size(50, 23);
+            this.label_DonVi1.TabIndex = 113;
+            this.label_DonVi1.Text = "mét";
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(250, 200);
+            this.label5.Name = "label5";
+            this.label5.Padding = new System.Windows.Forms.Padding(3);
+            this.label5.Size = new System.Drawing.Size(50, 23);
+            this.label5.TabIndex = 114;
+            this.label5.Text = "mét";
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(250, 260);
+            this.label6.Name = "label6";
+            this.label6.Padding = new System.Windows.Forms.Padding(3);
+            this.label6.Size = new System.Drawing.Size(50, 23);
+            this.label6.TabIndex = 115;
+            this.label6.Text = "mét";
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(250, 290);
+            this.label7.Name = "label7";
+            this.label7.Padding = new System.Windows.Forms.Padding(3);
+            this.label7.Size = new System.Drawing.Size(50, 23);
+            this.label7.TabIndex = 116;
+            this.label7.Text = "mét";
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(250, 320);
+            this.label8.Name = "label8";
+            this.label8.Padding = new System.Windows.Forms.Padding(3);
+            this.label8.Size = new System.Drawing.Size(50, 23);
+            this.label8.TabIndex = 117;
+            this.label8.Text = "mét";
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(250, 350);
+            this.label9.Name = "label9";
+            this.label9.Padding = new System.Windows.Forms.Padding(3);
+            this.label9.Size = new System.Drawing.Size(50, 23);
+            this.label9.TabIndex = 118;
+            this.label9.Text = "mét";
+            // 
+            // elementHost_LoKhoan
+            // 
+            this.elementHost_LoKhoan.BackColorTransparent = true;
+            this.elementHost_LoKhoan.Location = new System.Drawing.Point(350, 20);
+            this.elementHost_LoKhoan.Name = "elementHost_LoKhoan";
+            this.elementHost_LoKhoan.Size = new System.Drawing.Size(120, 320);
+            this.elementHost_LoKhoan.TabIndex = 99;
+            this.elementHost_LoKhoan.Text = "elementHost1";
+            this.elementHost_LoKhoan.Child = this.userControl_LoKhoan1;
+            // 
             // FormLoKhoanHoChieu
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 411);
+            this.ClientSize = new System.Drawing.Size(504, 411);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label_DonVi1);
             this.Controls.Add(this.labelValue_MaHoChieu);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -382,7 +452,6 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.elementHost_LoKhoan);
-            this.Controls.Add(this.labelTitle3);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.comboBox_HuongKhoan);
             this.Controls.Add(this.textBox_ChieuSauLK);
@@ -418,7 +487,6 @@
         private System.Windows.Forms.TextBox textBox_ChieuSauLK;
         private System.Windows.Forms.TextBox textBox_DuongKinh;
         private System.Windows.Forms.Button buttonUpdate;
-        private System.Windows.Forms.Label labelTitle3;
         private System.Windows.Forms.Integration.ElementHost elementHost_LoKhoan;
         private CustomControls.UserControl_LoKhoan userControl_LoKhoan1;
         private System.Windows.Forms.TextBox textBox1;
@@ -434,5 +502,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label labelValue_MaHoChieu;
+        private System.Windows.Forms.Label label_DonVi1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }

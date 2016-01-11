@@ -134,7 +134,7 @@ namespace WindowsForms_MoPhongKhoanNoMin.GUILayer
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            LoKhoan loKhoan = BS_LoKhoan.ThongTinLoKhoan(idHoChieu, idLoKhoan);
+            LoKhoan loKhoan = BS_LoKhoan.ThongTinLoKhoan(idHoChieu, (comboBox_MaLK.SelectedItem as LoKhoan).MaLoKhoan);
             if(comboBox_MayKhoan.SelectedItem != null)
             {
                 loKhoan.MaMayKhoan = (comboBox_MayKhoan.SelectedItem as MayKhoan).MaMayKhoan;
@@ -150,7 +150,7 @@ namespace WindowsForms_MoPhongKhoanNoMin.GUILayer
             loKhoan.Lbua = double.Parse(textBox4.Text);
             BS_LoKhoan.CapNhatLoKhoan(loKhoan);
             ChangeView(false);
-            RefreshData(idLoKhoan);
+            RefreshData((comboBox_MaLK.SelectedItem as LoKhoan).MaLoKhoan);
         }
 
         private void ChangeView(bool b)
@@ -180,8 +180,10 @@ namespace WindowsForms_MoPhongKhoanNoMin.GUILayer
             comboBox_MayKhoan.DisplayMember = "TenMayKhoan";
             comboBox_MayKhoan.Text = BS_MayKhoan.MayKhoan(loKhoan.MaMayKhoan).TenMayKhoan;
             //hiển thị thông số
-            labelValue_DuongKinh.Text = textBox_DuongKinh.Text = (Math.Round(loKhoan.BanKinh * 2, 2)).ToString();
-            labelValue_ChieuSauLK.Text = textBox_ChieuSauLK.Text = (Math.Round(loKhoan.ChieuSau, 2)).ToString();
+            labelValue_DuongKinh.Text = (Math.Round(loKhoan.BanKinh * 2, 2)).ToString();
+            textBox_DuongKinh.Text = (Math.Round(loKhoan.BanKinh * 2, 2)).ToString();
+            labelValue_ChieuSauLK.Text = (Math.Round(loKhoan.ChieuSau, 2)).ToString();
+            textBox_ChieuSauLK.Text = (Math.Round(loKhoan.ChieuSau, 2)).ToString();
             labelValue_HuongKhoan.Text = comboBox_HuongKhoan.Text = loKhoan.HuongKhoan;
             labelValue_ToaDoX.Text = textBox_ToaDoX.Text = (Math.Round(loKhoan.ToaDoX, 2)).ToString();
             labelValue_ToaDoY.Text = textBox_ToaDoY.Text = (Math.Round(loKhoan.ToaDoY, 2)).ToString();

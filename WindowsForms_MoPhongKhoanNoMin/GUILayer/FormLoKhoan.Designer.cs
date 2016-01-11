@@ -74,6 +74,12 @@
             this.labelValue_Lkk = new System.Windows.Forms.Label();
             this.labelValue_L0 = new System.Windows.Forms.Label();
             this.labelValue_Lbua = new System.Windows.Forms.Label();
+            this.label_DonVi1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.elementHost_LoKhoan = new System.Windows.Forms.Integration.ElementHost();
             this.userControl_LoKhoan1 = new WindowsForms_MoPhongKhoanNoMin.CustomControls.UserControl_LoKhoan();
             this.SuspendLayout();
@@ -277,7 +283,7 @@
             this.labelValue_DuongKinh.Location = new System.Drawing.Point(200, 230);
             this.labelValue_DuongKinh.Name = "labelValue_DuongKinh";
             this.labelValue_DuongKinh.Padding = new System.Windows.Forms.Padding(3);
-            this.labelValue_DuongKinh.Size = new System.Drawing.Size(150, 23);
+            this.labelValue_DuongKinh.Size = new System.Drawing.Size(50, 23);
             this.labelValue_DuongKinh.TabIndex = 68;
             this.labelValue_DuongKinh.Text = "value";
             // 
@@ -289,7 +295,7 @@
             this.labelValue_ChieuSauLK.Location = new System.Drawing.Point(200, 260);
             this.labelValue_ChieuSauLK.Name = "labelValue_ChieuSauLK";
             this.labelValue_ChieuSauLK.Padding = new System.Windows.Forms.Padding(3);
-            this.labelValue_ChieuSauLK.Size = new System.Drawing.Size(150, 23);
+            this.labelValue_ChieuSauLK.Size = new System.Drawing.Size(50, 23);
             this.labelValue_ChieuSauLK.TabIndex = 69;
             this.labelValue_ChieuSauLK.Text = "value";
             // 
@@ -334,7 +340,7 @@
             this.textBox_DuongKinh.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_DuongKinh.Location = new System.Drawing.Point(200, 230);
             this.textBox_DuongKinh.Name = "textBox_DuongKinh";
-            this.textBox_DuongKinh.Size = new System.Drawing.Size(100, 22);
+            this.textBox_DuongKinh.Size = new System.Drawing.Size(50, 22);
             this.textBox_DuongKinh.TabIndex = 78;
             this.textBox_DuongKinh.Text = "0";
             // 
@@ -343,7 +349,7 @@
             this.textBox_ChieuSauLK.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_ChieuSauLK.Location = new System.Drawing.Point(200, 260);
             this.textBox_ChieuSauLK.Name = "textBox_ChieuSauLK";
-            this.textBox_ChieuSauLK.Size = new System.Drawing.Size(100, 22);
+            this.textBox_ChieuSauLK.Size = new System.Drawing.Size(50, 22);
             this.textBox_ChieuSauLK.TabIndex = 79;
             this.textBox_ChieuSauLK.Text = "0";
             // 
@@ -392,7 +398,7 @@
             // buttonEdit
             // 
             this.buttonEdit.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonEdit.BackgroundImage = global::WindowsForms_MoPhongKhoanNoMin.Properties.Resources.wrench_white;
+            this.buttonEdit.BackgroundImage = global::WindowsForms_MoPhongKhoanNoMin.Properties.Resources.update_white;
             this.buttonEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -454,7 +460,7 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(610, 328);
+            this.label4.Location = new System.Drawing.Point(560, 328);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(30, 5);
             this.label4.TabIndex = 123;
@@ -462,7 +468,7 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(610, 298);
+            this.label3.Location = new System.Drawing.Point(560, 298);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 5);
             this.label3.TabIndex = 122;
@@ -470,7 +476,7 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(610, 268);
+            this.label2.Location = new System.Drawing.Point(560, 268);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(30, 5);
             this.label2.TabIndex = 121;
@@ -478,7 +484,7 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(610, 238);
+            this.label1.Location = new System.Drawing.Point(560, 238);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 5);
             this.label1.TabIndex = 120;
@@ -538,7 +544,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(550, 320);
+            this.textBox4.Location = new System.Drawing.Point(600, 320);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(50, 22);
             this.textBox4.TabIndex = 115;
@@ -547,7 +553,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(550, 290);
+            this.textBox3.Location = new System.Drawing.Point(600, 290);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(50, 22);
             this.textBox3.TabIndex = 114;
@@ -556,7 +562,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(550, 260);
+            this.textBox2.Location = new System.Drawing.Point(600, 260);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(50, 22);
             this.textBox2.TabIndex = 113;
@@ -565,7 +571,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(550, 230);
+            this.textBox1.Location = new System.Drawing.Point(600, 230);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(50, 22);
             this.textBox1.TabIndex = 112;
@@ -576,7 +582,7 @@
             this.labelValue_Lt.BackColor = System.Drawing.Color.Transparent;
             this.labelValue_Lt.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelValue_Lt.ForeColor = System.Drawing.Color.Black;
-            this.labelValue_Lt.Location = new System.Drawing.Point(550, 230);
+            this.labelValue_Lt.Location = new System.Drawing.Point(600, 230);
             this.labelValue_Lt.Name = "labelValue_Lt";
             this.labelValue_Lt.Padding = new System.Windows.Forms.Padding(3);
             this.labelValue_Lt.Size = new System.Drawing.Size(50, 23);
@@ -588,7 +594,7 @@
             this.labelValue_Lkk.BackColor = System.Drawing.Color.Transparent;
             this.labelValue_Lkk.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelValue_Lkk.ForeColor = System.Drawing.Color.Black;
-            this.labelValue_Lkk.Location = new System.Drawing.Point(550, 260);
+            this.labelValue_Lkk.Location = new System.Drawing.Point(600, 260);
             this.labelValue_Lkk.Name = "labelValue_Lkk";
             this.labelValue_Lkk.Padding = new System.Windows.Forms.Padding(3);
             this.labelValue_Lkk.Size = new System.Drawing.Size(50, 23);
@@ -600,7 +606,7 @@
             this.labelValue_L0.BackColor = System.Drawing.Color.Transparent;
             this.labelValue_L0.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelValue_L0.ForeColor = System.Drawing.Color.Black;
-            this.labelValue_L0.Location = new System.Drawing.Point(550, 290);
+            this.labelValue_L0.Location = new System.Drawing.Point(600, 290);
             this.labelValue_L0.Name = "labelValue_L0";
             this.labelValue_L0.Padding = new System.Windows.Forms.Padding(3);
             this.labelValue_L0.Size = new System.Drawing.Size(50, 23);
@@ -612,12 +618,84 @@
             this.labelValue_Lbua.BackColor = System.Drawing.Color.Transparent;
             this.labelValue_Lbua.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelValue_Lbua.ForeColor = System.Drawing.Color.Black;
-            this.labelValue_Lbua.Location = new System.Drawing.Point(550, 320);
+            this.labelValue_Lbua.Location = new System.Drawing.Point(600, 320);
             this.labelValue_Lbua.Name = "labelValue_Lbua";
             this.labelValue_Lbua.Padding = new System.Windows.Forms.Padding(3);
             this.labelValue_Lbua.Size = new System.Drawing.Size(50, 23);
             this.labelValue_Lbua.TabIndex = 127;
             this.labelValue_Lbua.Text = "value";
+            // 
+            // label_DonVi1
+            // 
+            this.label_DonVi1.BackColor = System.Drawing.Color.Transparent;
+            this.label_DonVi1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_DonVi1.ForeColor = System.Drawing.Color.Black;
+            this.label_DonVi1.Location = new System.Drawing.Point(650, 230);
+            this.label_DonVi1.Name = "label_DonVi1";
+            this.label_DonVi1.Padding = new System.Windows.Forms.Padding(3);
+            this.label_DonVi1.Size = new System.Drawing.Size(50, 23);
+            this.label_DonVi1.TabIndex = 128;
+            this.label_DonVi1.Text = "mét";
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(650, 260);
+            this.label5.Name = "label5";
+            this.label5.Padding = new System.Windows.Forms.Padding(3);
+            this.label5.Size = new System.Drawing.Size(50, 23);
+            this.label5.TabIndex = 129;
+            this.label5.Text = "mét";
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(650, 290);
+            this.label6.Name = "label6";
+            this.label6.Padding = new System.Windows.Forms.Padding(3);
+            this.label6.Size = new System.Drawing.Size(50, 23);
+            this.label6.TabIndex = 130;
+            this.label6.Text = "mét";
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(650, 320);
+            this.label7.Name = "label7";
+            this.label7.Padding = new System.Windows.Forms.Padding(3);
+            this.label7.Size = new System.Drawing.Size(50, 23);
+            this.label7.TabIndex = 131;
+            this.label7.Text = "mét";
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(250, 230);
+            this.label8.Name = "label8";
+            this.label8.Padding = new System.Windows.Forms.Padding(3);
+            this.label8.Size = new System.Drawing.Size(50, 23);
+            this.label8.TabIndex = 132;
+            this.label8.Text = "mét";
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(250, 260);
+            this.label9.Name = "label9";
+            this.label9.Padding = new System.Windows.Forms.Padding(3);
+            this.label9.Size = new System.Drawing.Size(50, 23);
+            this.label9.TabIndex = 133;
+            this.label9.Text = "mét";
             // 
             // elementHost_LoKhoan
             // 
@@ -635,6 +713,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 411);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label_DonVi1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -743,5 +827,11 @@
         private System.Windows.Forms.Label labelValue_Lkk;
         private System.Windows.Forms.Label labelValue_L0;
         private System.Windows.Forms.Label labelValue_Lbua;
+        private System.Windows.Forms.Label label_DonVi1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }

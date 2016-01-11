@@ -113,6 +113,16 @@ namespace WindowsForms_MoPhongKhoanNoMin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap update_white {
+            get {
+                object obj = ResourceManager.GetObject("update_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wrench_white {
             get {
                 object obj = ResourceManager.GetObject("wrench_white", resourceCulture);

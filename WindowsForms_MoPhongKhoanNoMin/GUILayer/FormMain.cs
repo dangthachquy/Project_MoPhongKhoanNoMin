@@ -12,6 +12,7 @@ using DevExpress.XtraEditors;
 using WindowsForms_MoPhongKhoanNoMin.BusinessLayer;
 using WindowsForms_MoPhongKhoanNoMin.CustomControls;
 using System.Threading;
+using System.IO;
 
 namespace WindowsForms_MoPhongKhoanNoMin.GUILayer
 {
@@ -86,7 +87,7 @@ namespace WindowsForms_MoPhongKhoanNoMin.GUILayer
             Lcad.WndResize(hWnd, 0, 0, panelControl_hWnd.Width, panelControl_hWnd.Height);
             //thêm layer
             layerLoMin = Lcad.DrwAddLayer(hDrw, "LoMin", "cyan", 0, Lcad.LC_LWEIGHT_DEFAULT);
-            layerLuoiKichThuoc = Lcad.DrwAddLayer(hDrw, "LuoiKichThuoc", "ltgray", 0, Lcad.LC_LWEIGHT_DEFAULT);
+            layerLuoiKichThuoc = Lcad.DrwAddLayer(hDrw, "LuoiKichThuoc", "foreground", 0, Lcad.LC_LWEIGHT_DEFAULT);
             //vẽ lại hình
             Lcad.WndExeCommand(hWnd, Lcad.LC_CMD_REGEN, 0);
             Lcad.DrwRegenViews(hDrw, 0);
@@ -122,7 +123,7 @@ namespace WindowsForms_MoPhongKhoanNoMin.GUILayer
                 List<Circle> listCircle = mgCircles.GetListCircles();
                 foreach (Circle c in listCircle)
                 {
-                    if (CheckInCirlce(Xdrw, Ydrw, c))
+                    if (BS_LiteCAD.CheckInCirlce(Xdrw, Ydrw, c))
                     {
                         FormLoKhoan fm = new FormLoKhoan(hoChieuChinh.MaHoChieu ,c.GetID().ToString());
                         fm.Show();
@@ -130,13 +131,6 @@ namespace WindowsForms_MoPhongKhoanNoMin.GUILayer
                     }
                 }
             }
-        }
-        private bool CheckInCirlce(double x, double y, Circle c)
-        {
-            double kc = Math.Sqrt((x - c.GetX()) * (x - c.GetX()) + (y - c.GetY()) * (y - c.GetY()));
-            if (kc < c.GetRadius())
-            { return true; }
-            return false;
         }
         //tab - hệ thống
         //tạo bản vẽ
@@ -155,7 +149,7 @@ namespace WindowsForms_MoPhongKhoanNoMin.GUILayer
             this.Text = "Hộ chiếu: [" + this.hoChieuChinh.TenHoChieu + "]";
             Lcad.DrwLoad(hDrw, BS_Template.ChonTemplate(this.banVeChinh.Template).DuongDan, this.Handle, hWnd);
             layerLoMin = Lcad.DrwAddLayer(hDrw, "LoMin", "cyan", 0, Lcad.LC_LWEIGHT_DEFAULT);
-            layerLuoiKichThuoc = Lcad.DrwAddLayer(hDrw, "LuoiKichThuoc", "ltgray", 0, Lcad.LC_LWEIGHT_DEFAULT);
+            layerLuoiKichThuoc = Lcad.DrwAddLayer(hDrw, "LuoiKichThuoc", "foreground", 0, Lcad.LC_LWEIGHT_DEFAULT);
             //vẽ lại hình
             Lcad.DrwRegenViews(hDrw, 0);
             Lcad.WndExeCommand(hWnd, Lcad.LC_CMD_ZOOM_EXT, 0);
@@ -186,7 +180,7 @@ namespace WindowsForms_MoPhongKhoanNoMin.GUILayer
                         this.Text = "Bản vẽ: [" + filename.FileName + "]";
                         Lcad.DrwLoad(hDrw, filename.FileName, this.Handle, hWnd);
                         layerLoMin = Lcad.DrwAddLayer(hDrw, "LoMin", "cyan", 0, Lcad.LC_LWEIGHT_DEFAULT);
-                        layerLuoiKichThuoc = Lcad.DrwAddLayer(hDrw, "LuoiKichThuoc", "ltgray", 0, Lcad.LC_LWEIGHT_DEFAULT);
+                        layerLuoiKichThuoc = Lcad.DrwAddLayer(hDrw, "LuoiKichThuoc", "foreground", 0, Lcad.LC_LWEIGHT_DEFAULT);
                         GetCirlcesFromAutocadFile();
                         Lcad.DrwRegenViews(hDrw, 0);
                         BS_LiteCAD.ShowNotifyAutoHide(elementHost1, "Bản vẽ sẵn sàng");
@@ -217,7 +211,7 @@ namespace WindowsForms_MoPhongKhoanNoMin.GUILayer
             this.Text = "Bản vẽ: [" + this.banVeChinh.TenBanVe + "]";
             Lcad.DrwLoad(hDrw, BS_Template.ChonTemplate(this.banVeChinh.Template).DuongDan, this.Handle, hWnd);
             layerLoMin = Lcad.DrwAddLayer(hDrw, "LoMin", "cyan", 0, Lcad.LC_LWEIGHT_DEFAULT);
-            layerLuoiKichThuoc = Lcad.DrwAddLayer(hDrw, "LuoiKichThuoc", "ltgray", 0, Lcad.LC_LWEIGHT_DEFAULT);
+            layerLuoiKichThuoc = Lcad.DrwAddLayer(hDrw, "LuoiKichThuoc", "foreground", 0, Lcad.LC_LWEIGHT_DEFAULT);
             int hBlockModel = Lcad.PropGetHandle(hDrw, Lcad.LC_PROP_DRW_BLOCK_MODEL);
             foreach (LoKhoan value in danhSachLoKhoan)
             {
@@ -524,11 +518,23 @@ namespace WindowsForms_MoPhongKhoanNoMin.GUILayer
         //
         private void barButtonItem_HoChieuNoMin_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            Lcad.PropPutInt(hDrw, Lcad.LC_PROP_DRW_COLORBACKM, int.Parse("FFFFFF", System.Globalization.NumberStyles.HexNumber));
+            Lcad.PropPutInt(hDrw, Lcad.LC_PROP_DRW_COLORFOREM, int.Parse("000000", System.Globalization.NumberStyles.HexNumber));
+            Lcad.PropPutStr(layerLoMin, Lcad.LC_PROP_LAYER_COLOR, "blue");
+            Lcad.WndExeCommand(hWnd, Lcad.LC_CMD_REGEN, 0);
+            Lcad.DrwRegenViews(hDrw, 0);
+            Lcad.Initialize();
             int hView = Lcad.PropGetHandle(hDrw, Lcad.LC_PROP_DRW_VIEW);
-            Lcad.ViewRasterize(hView, @"" + Application.StartupPath + "\\Sodobaino.bmp", 0, 0, 0, 0, 10);
-
+            String fullPath = Path.GetFullPath(Path.Combine((@"" + Application.StartupPath), @"..\..\"));
+            Lcad.ViewRasterize(hView, fullPath + "Template\\ViewTemp.bmp", 0, 0, 0, 0, 10);
+            Lcad.PropPutInt(hDrw, Lcad.LC_PROP_DRW_COLORBACKM, int.Parse("000000", System.Globalization.NumberStyles.HexNumber));
+            Lcad.PropPutInt(hDrw, Lcad.LC_PROP_DRW_COLORFOREM, int.Parse("FFFFFF", System.Globalization.NumberStyles.HexNumber));
+            Lcad.PropPutStr(layerLoMin, Lcad.LC_PROP_LAYER_COLOR, "cyan");
+            Lcad.WndExeCommand(hWnd, Lcad.LC_CMD_REGEN, 0);
+            Lcad.DrwRegenViews(hDrw, 0);
+            Lcad.Initialize();
             FormBaoCaoThongKe fm = new FormBaoCaoThongKe(hoChieuChinh);
-            fm.Show();
+            fm.Show();          
         }
 
         private void MouseDblClkProc_XayDungLuoiLoMin(int hWnd, int Button, int Flags, int Xwin, int Ywin, double Xdrw, double Ydrw)
@@ -597,6 +603,7 @@ namespace WindowsForms_MoPhongKhoanNoMin.GUILayer
             Lcad.DrwRegenViews(hDrw, 0);
             Lcad.WndExeCommand(hWnd, Lcad.LC_CMD_ZOOM_EXT, 0);
             Lcad.OnEventMouseDblClk(_EventMouseDbclick_LoMin);
+            LuuHoChieu(this.hoChieuChinh.MaHoChieu);    //ăn gian...
             BS_LiteCAD.ShowNotifyAutoHide(elementHost1, "Xây dựng lưới lỗ khoan - hoàn thành");
         }
 

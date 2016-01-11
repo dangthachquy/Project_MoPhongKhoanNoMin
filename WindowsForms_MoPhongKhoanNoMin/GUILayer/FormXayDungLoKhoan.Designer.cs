@@ -46,6 +46,9 @@
             this.checkBoxKichThuoc = new System.Windows.Forms.CheckBox();
             this.textBoxBanKinh = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.label_DonVi1 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -65,11 +68,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(250, 120);
+            this.label4.Location = new System.Drawing.Point(300, 120);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 17);
+            this.label4.Size = new System.Drawing.Size(105, 17);
             this.label4.TabIndex = 47;
-            this.label4.Text = "Khoảng cách";
+            this.label4.Text = "Khoảng cách cột";
             // 
             // label5
             // 
@@ -84,7 +87,7 @@
             // textBoxKhoangCachCot
             // 
             this.textBoxKhoangCachCot.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxKhoangCachCot.Location = new System.Drawing.Point(350, 120);
+            this.textBoxKhoangCachCot.Location = new System.Drawing.Point(430, 120);
             this.textBoxKhoangCachCot.Name = "textBoxKhoangCachCot";
             this.textBoxKhoangCachCot.Size = new System.Drawing.Size(50, 22);
             this.textBoxKhoangCachCot.TabIndex = 45;
@@ -103,11 +106,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(250, 70);
+            this.label3.Location = new System.Drawing.Point(300, 70);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 17);
+            this.label3.Size = new System.Drawing.Size(116, 17);
             this.label3.TabIndex = 43;
-            this.label3.Text = "Khoảng cách";
+            this.label3.Text = "Khoảng cách hàng";
             // 
             // label2
             // 
@@ -122,7 +125,7 @@
             // textBoxKhoangCachHang
             // 
             this.textBoxKhoangCachHang.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxKhoangCachHang.Location = new System.Drawing.Point(350, 70);
+            this.textBoxKhoangCachHang.Location = new System.Drawing.Point(430, 70);
             this.textBoxKhoangCachHang.Name = "textBoxKhoangCachHang";
             this.textBoxKhoangCachHang.Size = new System.Drawing.Size(50, 22);
             this.textBoxKhoangCachHang.TabIndex = 41;
@@ -143,12 +146,13 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(50, 220);
+            this.label6.Location = new System.Drawing.Point(8, 198);
             this.label6.Name = "label6";
             this.label6.Padding = new System.Windows.Forms.Padding(3);
             this.label6.Size = new System.Drawing.Size(88, 27);
             this.label6.TabIndex = 48;
             this.label6.Text = "Hướng vẽ";
+            this.label6.Visible = false;
             // 
             // radioButtonTemp4
             // 
@@ -159,7 +163,7 @@
             this.radioButtonTemp4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButtonTemp4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonTemp4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.radioButtonTemp4.Location = new System.Drawing.Point(350, 270);
+            this.radioButtonTemp4.Location = new System.Drawing.Point(188, 228);
             this.radioButtonTemp4.Name = "radioButtonTemp4";
             this.radioButtonTemp4.Size = new System.Drawing.Size(80, 45);
             this.radioButtonTemp4.TabIndex = 52;
@@ -167,6 +171,7 @@
             this.radioButtonTemp4.Text = "Trái Lên";
             this.radioButtonTemp4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.radioButtonTemp4.UseVisualStyleBackColor = false;
+            this.radioButtonTemp4.Visible = false;
             // 
             // radioButtonTemp3
             // 
@@ -177,7 +182,7 @@
             this.radioButtonTemp3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButtonTemp3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonTemp3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.radioButtonTemp3.Location = new System.Drawing.Point(260, 270);
+            this.radioButtonTemp3.Location = new System.Drawing.Point(277, 228);
             this.radioButtonTemp3.Name = "radioButtonTemp3";
             this.radioButtonTemp3.Size = new System.Drawing.Size(80, 45);
             this.radioButtonTemp3.TabIndex = 51;
@@ -185,6 +190,7 @@
             this.radioButtonTemp3.Text = "Trái Xuống";
             this.radioButtonTemp3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.radioButtonTemp3.UseVisualStyleBackColor = false;
+            this.radioButtonTemp3.Visible = false;
             // 
             // radioButtonTemp2
             // 
@@ -195,7 +201,7 @@
             this.radioButtonTemp2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButtonTemp2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonTemp2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.radioButtonTemp2.Location = new System.Drawing.Point(170, 270);
+            this.radioButtonTemp2.Location = new System.Drawing.Point(102, 228);
             this.radioButtonTemp2.Name = "radioButtonTemp2";
             this.radioButtonTemp2.Size = new System.Drawing.Size(80, 45);
             this.radioButtonTemp2.TabIndex = 50;
@@ -203,6 +209,7 @@
             this.radioButtonTemp2.Text = "Phải Lên";
             this.radioButtonTemp2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.radioButtonTemp2.UseVisualStyleBackColor = false;
+            this.radioButtonTemp2.Visible = false;
             // 
             // radioButtonTemp1
             // 
@@ -213,7 +220,7 @@
             this.radioButtonTemp1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButtonTemp1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonTemp1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.radioButtonTemp1.Location = new System.Drawing.Point(80, 270);
+            this.radioButtonTemp1.Location = new System.Drawing.Point(12, 228);
             this.radioButtonTemp1.Name = "radioButtonTemp1";
             this.radioButtonTemp1.Size = new System.Drawing.Size(80, 45);
             this.radioButtonTemp1.TabIndex = 49;
@@ -221,6 +228,7 @@
             this.radioButtonTemp1.Text = "Phải Xuống";
             this.radioButtonTemp1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.radioButtonTemp1.UseVisualStyleBackColor = false;
+            this.radioButtonTemp1.Visible = false;
             // 
             // buttonChonToaDo
             // 
@@ -230,7 +238,7 @@
             this.buttonChonToaDo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonChonToaDo.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonChonToaDo.ForeColor = System.Drawing.Color.White;
-            this.buttonChonToaDo.Location = new System.Drawing.Point(80, 350);
+            this.buttonChonToaDo.Location = new System.Drawing.Point(430, 220);
             this.buttonChonToaDo.Name = "buttonChonToaDo";
             this.buttonChonToaDo.Size = new System.Drawing.Size(111, 33);
             this.buttonChonToaDo.TabIndex = 53;
@@ -243,7 +251,7 @@
             this.checkBoxKichThuoc.AutoSize = true;
             this.checkBoxKichThuoc.Checked = true;
             this.checkBoxKichThuoc.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxKichThuoc.Location = new System.Drawing.Point(253, 172);
+            this.checkBoxKichThuoc.Location = new System.Drawing.Point(300, 172);
             this.checkBoxKichThuoc.Name = "checkBoxKichThuoc";
             this.checkBoxKichThuoc.Size = new System.Drawing.Size(134, 17);
             this.checkBoxKichThuoc.TabIndex = 54;
@@ -269,13 +277,52 @@
             this.label7.TabIndex = 56;
             this.label7.Text = "Bán kính";
             // 
+            // label_DonVi1
+            // 
+            this.label_DonVi1.BackColor = System.Drawing.Color.Transparent;
+            this.label_DonVi1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_DonVi1.ForeColor = System.Drawing.Color.Black;
+            this.label_DonVi1.Location = new System.Drawing.Point(200, 169);
+            this.label_DonVi1.Name = "label_DonVi1";
+            this.label_DonVi1.Padding = new System.Windows.Forms.Padding(3);
+            this.label_DonVi1.Size = new System.Drawing.Size(50, 23);
+            this.label_DonVi1.TabIndex = 100;
+            this.label_DonVi1.Text = "mét";
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(480, 119);
+            this.label8.Name = "label8";
+            this.label8.Padding = new System.Windows.Forms.Padding(3);
+            this.label8.Size = new System.Drawing.Size(50, 23);
+            this.label8.TabIndex = 101;
+            this.label8.Text = "mét";
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(480, 69);
+            this.label9.Name = "label9";
+            this.label9.Padding = new System.Windows.Forms.Padding(3);
+            this.label9.Size = new System.Drawing.Size(50, 23);
+            this.label9.TabIndex = 102;
+            this.label9.Text = "mét";
+            // 
             // FormXayDungLoKhoan
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 411);
+            this.ClientSize = new System.Drawing.Size(584, 281);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label_DonVi1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBoxBanKinh);
             this.Controls.Add(this.checkBoxKichThuoc);
@@ -322,5 +369,8 @@
         private System.Windows.Forms.CheckBox checkBoxKichThuoc;
         private System.Windows.Forms.TextBox textBoxBanKinh;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label_DonVi1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }

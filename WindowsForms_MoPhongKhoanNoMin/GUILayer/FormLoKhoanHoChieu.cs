@@ -41,7 +41,6 @@ namespace WindowsForms_MoPhongKhoanNoMin.GUILayer
             //add text control
             textLabel.Add(labelTitle1);
             textLabel.Add(labelTitle2);
-            textLabel.Add(labelTitle3);
             textLabel.Add(label_MaHoChieu);
             textLabel.Add(label_MaMayKhoan);
             textLabel.Add(label_DuongKinh);
@@ -100,7 +99,6 @@ namespace WindowsForms_MoPhongKhoanNoMin.GUILayer
                 this.Close();
                 return;
             }
-            labelTitle3.Text = BS_HoChieu.HoChieu(idHoChieu).TenHoChieu;
             RefreshData();
         }
 
@@ -161,8 +159,8 @@ namespace WindowsForms_MoPhongKhoanNoMin.GUILayer
         /// <param name="e"></param>
         private void textBoxInput_KeyPress(object sender, KeyPressEventArgs e)
         {
-            const char Delete = (char)8;
-            e.Handled = !Char.IsDigit(e.KeyChar) && e.KeyChar != Delete;
+            //const char Delete = (char)8;
+            //e.Handled = !Char.IsDigit(e.KeyChar) && e.KeyChar != Delete;
         }
 
         private void textBox_TextChanged(object sender, EventArgs e)

@@ -69,6 +69,7 @@
             this.barButtonItem_Info = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem_CapNhatLoKhoan = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem_CapDoNo = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem_HoChieuNoMin = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -83,10 +84,8 @@
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.defaultLookAndFeel_FormMain = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.panelStatusBar = new System.Windows.Forms.Panel();
-            this.barButtonItem_HoChieuNoMin = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl)).BeginInit();
             this.splitContainerControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl_right)).BeginInit();
@@ -512,6 +511,15 @@
             this.barButtonItem_CapDoNo.Name = "barButtonItem_CapDoNo";
             this.barButtonItem_CapDoNo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem_CapDoNo_ItemClick);
             // 
+            // barButtonItem_HoChieuNoMin
+            // 
+            this.barButtonItem_HoChieuNoMin.Caption = "Hộ chiếu nổ mìn";
+            this.barButtonItem_HoChieuNoMin.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem_HoChieuNoMin.Glyph")));
+            this.barButtonItem_HoChieuNoMin.Id = 36;
+            this.barButtonItem_HoChieuNoMin.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem_HoChieuNoMin.LargeGlyph")));
+            this.barButtonItem_HoChieuNoMin.Name = "barButtonItem_HoChieuNoMin";
+            this.barButtonItem_HoChieuNoMin.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem_HoChieuNoMin_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -558,7 +566,7 @@
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem_CapDoNo);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             this.ribbonPageGroup7.ShowCaptionButton = false;
-            this.ribbonPageGroup7.Text = "empty";
+            this.ribbonPageGroup7.Text = "Quản lý CSDL";
             // 
             // ribbonPageGroup8
             // 
@@ -623,8 +631,7 @@
             // ribbonPage5
             // 
             this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup9,
-            this.ribbonPageGroup10});
+            this.ribbonPageGroup9});
             this.ribbonPage5.Name = "ribbonPage5";
             this.ribbonPage5.Text = "BÁO CÁO - THỐNG KÊ";
             // 
@@ -634,12 +641,6 @@
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
             this.ribbonPageGroup9.ShowCaptionButton = false;
             this.ribbonPageGroup9.Text = "Báo cáo";
-            // 
-            // ribbonPageGroup10
-            // 
-            this.ribbonPageGroup10.Name = "ribbonPageGroup10";
-            this.ribbonPageGroup10.ShowCaptionButton = false;
-            this.ribbonPageGroup10.Text = "Thống kê";
             // 
             // defaultLookAndFeel_FormMain
             // 
@@ -652,15 +653,6 @@
             this.panelStatusBar.Name = "panelStatusBar";
             this.panelStatusBar.Size = new System.Drawing.Size(1264, 30);
             this.panelStatusBar.TabIndex = 7;
-            // 
-            // barButtonItem_HoChieuNoMin
-            // 
-            this.barButtonItem_HoChieuNoMin.Caption = "Hộ chiếu nổ mìn";
-            this.barButtonItem_HoChieuNoMin.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem_HoChieuNoMin.Glyph")));
-            this.barButtonItem_HoChieuNoMin.Id = 36;
-            this.barButtonItem_HoChieuNoMin.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem_HoChieuNoMin.LargeGlyph")));
-            this.barButtonItem_HoChieuNoMin.Name = "barButtonItem_HoChieuNoMin";
-            this.barButtonItem_HoChieuNoMin.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem_HoChieuNoMin_ItemClick);
             // 
             // FormMain
             // 
@@ -752,7 +744,6 @@
         private System.Windows.Forms.Panel panelStatusBar;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage5;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
         private DevExpress.XtraBars.BarButtonItem barButtonItem_HoChieuNoMin;
     }
 }

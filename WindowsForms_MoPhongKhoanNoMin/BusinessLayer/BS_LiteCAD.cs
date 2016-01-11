@@ -18,5 +18,13 @@ namespace WindowsForms_MoPhongKhoanNoMin.BusinessLayer
             elementHost1.Child = note;
             note.ShowNotifyAutoHide();
         }
+
+        public static bool CheckInCirlce(double x, double y, Circle c)
+        {
+            double kc = Math.Sqrt((x - c.GetX()) * (x - c.GetX()) + (y - c.GetY()) * (y - c.GetY()));
+            if (kc < c.GetRadius())
+            { return true; }
+            return false;
+        }
     }
 }

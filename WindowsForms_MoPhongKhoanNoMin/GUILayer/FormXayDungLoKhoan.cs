@@ -118,8 +118,8 @@ namespace WindowsForms_MoPhongKhoanNoMin.GUILayer
         /// <param name="e"></param>
         private void textBoxInput_KeyPress(object sender, KeyPressEventArgs e)
         {
-            const char Delete = (char)8;
-            e.Handled = !Char.IsDigit(e.KeyChar) && e.KeyChar != Delete;
+            //const char Delete = (char)8;
+            //e.Handled = !Char.IsDigit(e.KeyChar) && e.KeyChar != Delete;
         }
 
         private void radioButtonTempGroups_CheckedChanged(object sender, EventArgs e)
